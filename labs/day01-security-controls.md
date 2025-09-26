@@ -11,7 +11,7 @@ Display Name                                       Version    Date
 Command Line Tools for Xcode                       14.2       04/07/2023, 08:01:12  
 Command Line Tools for Xcode                       14.3       04/07/2023, 08:01:12  
 macOS Sequoia 15.6.1                               15.6.1     28/08/2025, 02:01:08  
-```
+
 
 📸 Screenshot: ![Update History](../screenshots/day1/update-history.png)
 
@@ -28,7 +28,7 @@ dscl . -read /Groups/admin GroupMembership
 
 ```
 GroupMembership: root williamj
-```
+
 ✅ Notes:
 Only williamj (my main user) and root have admin rights.
 No unexpected accounts found.
