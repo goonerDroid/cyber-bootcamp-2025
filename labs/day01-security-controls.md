@@ -33,3 +33,28 @@ GroupMembership: root williamj
 Only williamj (my main user) and root have admin rights.
 No unexpected accounts found.
 This enforces the least privilege principle, limiting the risk of privilege escalation.
+
+
+## 🔹 Authentication & Encryption
+```bash
+sudo fdesetup status
+
+```
+FileVault is On.
+
+✅ Notes:
+Was disabled at first, enabled it and added my recovery key on secure drive
+FileVault is enabled now, which means the entire disk is encrypted.
+This ensures data remains protected if the Mac is lost or stolen.
+
+```bash
+pwpolicy getaccountpolicies
+
+```
+policyAttributePassword matches '.{4,}+'
+Minimum password length = 4 characters
+
+✅ Notes:
+Current policy enforces only a 4-character minimum password, which is weak by modern standards.
+For stronger security, I would set at least 8–12 characters with complexity.
+This exercise highlights how authentication policies can be checked and hardened.
